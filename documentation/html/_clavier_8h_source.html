@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cadran_Projet_Horloge:  Fichier source de /home/USERS/ELEVES/SNIR2019/dgrammont/ProjetQt/ProjetHorloge/ProjetReveil/Clavier.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Cadran-à-13-pièces.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cadran_Projet_Horloge
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Cadran</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_clavier_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Clavier.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_clavier_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * To change this license header, choose License Headers in Project Properties.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * To change this template file, choose Tools | Templates</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * and open the template in the editor.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * File:   Clavier.h</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Author: philippe</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * Created on 31 décembre 2018, 17:11</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef CLAVIER_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define CLAVIER_H</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;termios.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">   19</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36">   21</a></span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36">AUCUNE</a>,</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63aea3c073df31939c172972ef6ccbc988b">   22</a></span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63aea3c073df31939c172972ef6ccbc988b">FIN</a>,</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a865d4bfdc2dd5f698e4558474765cba8">   23</a></span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a865d4bfdc2dd5f698e4558474765cba8">MODE</a>,</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a87fe59ef12c3d13dc2a4d14c9b16c1f9">   24</a></span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a87fe59ef12c3d13dc2a4d14c9b16c1f9">PLUS</a>,</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ab3f5b90252241b990310969408a0e7bd">   25</a></span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ab3f5b90252241b990310969408a0e7bd">MOINS</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_clavier.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_clavier.html">Clavier</a> {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_clavier.html#ae4ce5ced8f6e4473360a8ae8ca4a6d68">Clavier</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_clavier.html#a1298ff4f0a39c08758c53c281425a486">~Clavier</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a> <a class="code" href="class_clavier.html#a7efc777377f402e3a4dfb25dad2be5bb">ScruterClavier</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_clavier.html#a50195cc46cee3a51a83487284cdd2898">   35</a></span>&#160;    <span class="keyword">struct </span>termios <a class="code" href="class_clavier.html#a50195cc46cee3a51a83487284cdd2898">etatInitial</a> ;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CLAVIER_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36">AUCUNE</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:21</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63a865d4bfdc2dd5f698e4558474765cba8"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a865d4bfdc2dd5f698e4558474765cba8">MODE</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:23</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63aea3c073df31939c172972ef6ccbc988b"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63aea3c073df31939c172972ef6ccbc988b">FIN</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:22</div></div>
+<div class="ttc" id="class_clavier_html_ae4ce5ced8f6e4473360a8ae8ca4a6d68"><div class="ttname"><a href="class_clavier.html#ae4ce5ced8f6e4473360a8ae8ca4a6d68">Clavier::Clavier</a></div><div class="ttdeci">Clavier()</div><div class="ttdoc">Clavier::Clavier. </div><div class="ttdef"><b>Definition:</b> Clavier.cpp:21</div></div>
+<div class="ttc" id="class_clavier_html_a50195cc46cee3a51a83487284cdd2898"><div class="ttname"><a href="class_clavier.html#a50195cc46cee3a51a83487284cdd2898">Clavier::etatInitial</a></div><div class="ttdeci">struct termios etatInitial</div><div class="ttdef"><b>Definition:</b> Clavier.h:35</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63ab3f5b90252241b990310969408a0e7bd"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ab3f5b90252241b990310969408a0e7bd">MOINS</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:25</div></div>
+<div class="ttc" id="class_clavier_html"><div class="ttname"><a href="class_clavier.html">Clavier</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:28</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a></div><div class="ttdeci">TOUCHES_CLAVIER</div><div class="ttdef"><b>Definition:</b> Clavier.h:19</div></div>
+<div class="ttc" id="class_clavier_html_a7efc777377f402e3a4dfb25dad2be5bb"><div class="ttname"><a href="class_clavier.html#a7efc777377f402e3a4dfb25dad2be5bb">Clavier::ScruterClavier</a></div><div class="ttdeci">TOUCHES_CLAVIER ScruterClavier()</div><div class="ttdef"><b>Definition:</b> Clavier.cpp:42</div></div>
+<div class="ttc" id="class_clavier_html_a1298ff4f0a39c08758c53c281425a486"><div class="ttname"><a href="class_clavier.html#a1298ff4f0a39c08758c53c281425a486">Clavier::~Clavier</a></div><div class="ttdeci">~Clavier()</div><div class="ttdef"><b>Definition:</b> Clavier.cpp:38</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63a87fe59ef12c3d13dc2a4d14c9b16c1f9"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63a87fe59ef12c3d13dc2a4d14c9b16c1f9">PLUS</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_056f01c97e1613f99d6fd4285f951441.html">ProjetReveil</a></li><li class="navelem"><a class="el" href="_clavier_8h.html">Clavier.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

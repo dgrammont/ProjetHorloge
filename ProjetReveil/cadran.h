@@ -21,7 +21,7 @@ using namespace std;
 class Cadran
 {
 public:
-    Cadran(const int _posX=1,const int _posY=1,const int _hauteur=1,const int _largeur=7,const int _couleurFond=43,const int _couleurTtext=33);
+    Cadran(const int _posX=1,const int _posY=1,const int _hauteur=1,const int _largeur=7,const int _couleurFond=43,const int _couleurTtext=34);
     ~Cadran();
     void Afficher(const string _texte, const int _position=0,const int _ligne=1);
     void Afficher(const int _valeur, const int _position=0,const int _ligne=1);

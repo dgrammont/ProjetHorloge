@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cadran_Projet_Horloge:  Fichier source de /home/USERS/ELEVES/SNIR2019/dgrammont/ProjetQt/ProjetHorloge/ProjetReveil/reveil.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Cadran-à-13-pièces.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cadran_Projet_Horloge
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Cadran</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('reveil_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">reveil.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="reveil_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef REVEIL_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define REVEIL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="horloge_8h.html">horloge.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sonnerie_8h.html">sonnerie.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32">    5</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32">MODE_REVEIL</a>{</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32a38540c21dd804489d93efb6f8202755e">    6</a></span>&#160;    <a class="code" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32a38540c21dd804489d93efb6f8202755e">REGLAGE_HEURES_ALARME</a>=3,</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32adf9e41f3a0aacd703594d8c9cd2091a5">    7</a></span>&#160;    <a class="code" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32adf9e41f3a0aacd703594d8c9cd2091a5">REGLAGE_MINUTES_ALARME</a>,</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32ab7b6153cf2787b70259938f3ed068640">    8</a></span>&#160;    <a class="code" href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32ab7b6153cf2787b70259938f3ed068640">ACTIVATION_ALARME</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_reveil.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reveil.html">Reveil</a> : <span class="keyword">public</span> <a class="code" href="class_horloge.html">Horloge</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_reveil.html#a6998680e1ffc950a0e150b7f2055830a">Reveil</a>(<span class="keyword">const</span> <span class="keywordtype">short</span> _nbModes=6,<span class="keyword">const</span> <span class="keywordtype">short</span> _resolution=24);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reveil.html#aab9e9c5bfc2ba39911b39fe9adb033c2">AvancerHeuresAlarme</a>();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reveil.html#a6e0cad0f099f7e89b1604b9bcc77bba8">AvancerMinutesAlarme</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reveil.html#a207b7b13cb2fa1fe34a232ff5734984e">ReculerHeuresAlarme</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reveil.html#aa7b2522ca1d10178cc82029387e48706">ReculerMinutesAlarme</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reveil.html#a8c4e06be706a764365a0bb51e3c71174">SurveillerAlarme</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a> <a class="code" href="class_horloge.html#a27deebf8481aba020c09016fc3c6aad8">Controler</a>( <a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a> _numTouche=<a class="code" href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36">AUCUNE</a>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_reveil.html#af2cc19eac0443c0168ebdd4023b68fb0">   22</a></span>&#160;    <a class="code" href="class_sonnerie.html">Sonnerie</a> <a class="code" href="class_reveil.html#af2cc19eac0443c0168ebdd4023b68fb0">laSonnerie</a>;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_reveil.html#a0a3632581fa9d27981b10a2e72a8cb95">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_reveil.html#a0a3632581fa9d27981b10a2e72a8cb95">heuresAlarme</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_reveil.html#a9dc10f3b00c6421599a536c378ec8236">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_reveil.html#a9dc10f3b00c6421599a536c378ec8236">minutesAlarme</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_reveil.html#a301810471a2f30d73e74a372dbded8dd">   25</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_reveil.html#a301810471a2f30d73e74a372dbded8dd">alarme</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_reveil.html#a0f250878a36a1937ef764e5df02aa1d5">   26</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_reveil.html#a0f250878a36a1937ef764e5df02aa1d5">enAlarme</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // REVEIL_H</span></div><div class="ttc" id="class_reveil_html"><div class="ttname"><a href="class_reveil.html">Reveil</a></div><div class="ttdef"><b>Definition:</b> reveil.h:11</div></div>
+<div class="ttc" id="class_reveil_html_aab9e9c5bfc2ba39911b39fe9adb033c2"><div class="ttname"><a href="class_reveil.html#aab9e9c5bfc2ba39911b39fe9adb033c2">Reveil::AvancerHeuresAlarme</a></div><div class="ttdeci">void AvancerHeuresAlarme()</div><div class="ttdoc">Reveil::AvancerHeuresAlarme. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:19</div></div>
+<div class="ttc" id="class_reveil_html_af2cc19eac0443c0168ebdd4023b68fb0"><div class="ttname"><a href="class_reveil.html#af2cc19eac0443c0168ebdd4023b68fb0">Reveil::laSonnerie</a></div><div class="ttdeci">Sonnerie laSonnerie</div><div class="ttdef"><b>Definition:</b> reveil.h:22</div></div>
+<div class="ttc" id="class_reveil_html_a9dc10f3b00c6421599a536c378ec8236"><div class="ttname"><a href="class_reveil.html#a9dc10f3b00c6421599a536c378ec8236">Reveil::minutesAlarme</a></div><div class="ttdeci">int minutesAlarme</div><div class="ttdef"><b>Definition:</b> reveil.h:24</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63ada12fe19f4d0f33e8b72265183214f36">AUCUNE</a></div><div class="ttdef"><b>Definition:</b> Clavier.h:21</div></div>
+<div class="ttc" id="class_reveil_html_a6e0cad0f099f7e89b1604b9bcc77bba8"><div class="ttname"><a href="class_reveil.html#a6e0cad0f099f7e89b1604b9bcc77bba8">Reveil::AvancerMinutesAlarme</a></div><div class="ttdeci">void AvancerMinutesAlarme()</div><div class="ttdoc">Reveil::AvancerMinutesAlarme. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:38</div></div>
+<div class="ttc" id="class_reveil_html_a0a3632581fa9d27981b10a2e72a8cb95"><div class="ttname"><a href="class_reveil.html#a0a3632581fa9d27981b10a2e72a8cb95">Reveil::heuresAlarme</a></div><div class="ttdeci">int heuresAlarme</div><div class="ttdef"><b>Definition:</b> reveil.h:23</div></div>
+<div class="ttc" id="class_reveil_html_a6998680e1ffc950a0e150b7f2055830a"><div class="ttname"><a href="class_reveil.html#a6998680e1ffc950a0e150b7f2055830a">Reveil::Reveil</a></div><div class="ttdeci">Reveil(const short _nbModes=6, const short _resolution=24)</div><div class="ttdoc">Reveil::Reveil. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:9</div></div>
+<div class="ttc" id="class_reveil_html_a207b7b13cb2fa1fe34a232ff5734984e"><div class="ttname"><a href="class_reveil.html#a207b7b13cb2fa1fe34a232ff5734984e">Reveil::ReculerHeuresAlarme</a></div><div class="ttdeci">void ReculerHeuresAlarme()</div><div class="ttdoc">Reveil::ReculerHeuresAlarme. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:55</div></div>
+<div class="ttc" id="reveil_8h_html_a05ea778dc27764216298d51d4f53fc32ab7b6153cf2787b70259938f3ed068640"><div class="ttname"><a href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32ab7b6153cf2787b70259938f3ed068640">ACTIVATION_ALARME</a></div><div class="ttdef"><b>Definition:</b> reveil.h:8</div></div>
+<div class="ttc" id="reveil_8h_html_a05ea778dc27764216298d51d4f53fc32a38540c21dd804489d93efb6f8202755e"><div class="ttname"><a href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32a38540c21dd804489d93efb6f8202755e">REGLAGE_HEURES_ALARME</a></div><div class="ttdef"><b>Definition:</b> reveil.h:6</div></div>
+<div class="ttc" id="class_reveil_html_a0f250878a36a1937ef764e5df02aa1d5"><div class="ttname"><a href="class_reveil.html#a0f250878a36a1937ef764e5df02aa1d5">Reveil::enAlarme</a></div><div class="ttdeci">bool enAlarme</div><div class="ttdef"><b>Definition:</b> reveil.h:26</div></div>
+<div class="ttc" id="horloge_8h_html"><div class="ttname"><a href="horloge_8h.html">horloge.h</a></div></div>
+<div class="ttc" id="class_sonnerie_html"><div class="ttname"><a href="class_sonnerie.html">Sonnerie</a></div><div class="ttdef"><b>Definition:</b> sonnerie.h:4</div></div>
+<div class="ttc" id="class_horloge_html"><div class="ttname"><a href="class_horloge.html">Horloge</a></div><div class="ttdef"><b>Definition:</b> horloge.h:15</div></div>
+<div class="ttc" id="_clavier_8h_html_a23d2d33e9263e863165cbc4bdb2abd63"><div class="ttname"><a href="_clavier_8h.html#a23d2d33e9263e863165cbc4bdb2abd63">TOUCHES_CLAVIER</a></div><div class="ttdeci">TOUCHES_CLAVIER</div><div class="ttdef"><b>Definition:</b> Clavier.h:19</div></div>
+<div class="ttc" id="class_horloge_html_a27deebf8481aba020c09016fc3c6aad8"><div class="ttname"><a href="class_horloge.html#a27deebf8481aba020c09016fc3c6aad8">Horloge::Controler</a></div><div class="ttdeci">void Controler()</div></div>
+<div class="ttc" id="reveil_8h_html_a05ea778dc27764216298d51d4f53fc32"><div class="ttname"><a href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32">MODE_REVEIL</a></div><div class="ttdeci">MODE_REVEIL</div><div class="ttdef"><b>Definition:</b> reveil.h:5</div></div>
+<div class="ttc" id="class_reveil_html_a301810471a2f30d73e74a372dbded8dd"><div class="ttname"><a href="class_reveil.html#a301810471a2f30d73e74a372dbded8dd">Reveil::alarme</a></div><div class="ttdeci">bool alarme</div><div class="ttdef"><b>Definition:</b> reveil.h:25</div></div>
+<div class="ttc" id="class_reveil_html_a8c4e06be706a764365a0bb51e3c71174"><div class="ttname"><a href="class_reveil.html#a8c4e06be706a764365a0bb51e3c71174">Reveil::SurveillerAlarme</a></div><div class="ttdeci">void SurveillerAlarme()</div><div class="ttdoc">Reveil::SurveillerAlarme. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:91</div></div>
+<div class="ttc" id="sonnerie_8h_html"><div class="ttname"><a href="sonnerie_8h.html">sonnerie.h</a></div></div>
+<div class="ttc" id="reveil_8h_html_a05ea778dc27764216298d51d4f53fc32adf9e41f3a0aacd703594d8c9cd2091a5"><div class="ttname"><a href="reveil_8h.html#a05ea778dc27764216298d51d4f53fc32adf9e41f3a0aacd703594d8c9cd2091a5">REGLAGE_MINUTES_ALARME</a></div><div class="ttdef"><b>Definition:</b> reveil.h:7</div></div>
+<div class="ttc" id="class_reveil_html_aa7b2522ca1d10178cc82029387e48706"><div class="ttname"><a href="class_reveil.html#aa7b2522ca1d10178cc82029387e48706">Reveil::ReculerMinutesAlarme</a></div><div class="ttdeci">void ReculerMinutesAlarme()</div><div class="ttdoc">Reveil::ReculerMinutesAlarme. </div><div class="ttdef"><b>Definition:</b> reveil.cpp:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_056f01c97e1613f99d6fd4285f951441.html">ProjetReveil</a></li><li class="navelem"><a class="el" href="reveil_8h.html">reveil.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

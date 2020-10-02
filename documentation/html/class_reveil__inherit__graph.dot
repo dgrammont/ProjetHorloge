@@ -1,0 +1,8 @@
+digraph "Reveil"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="{Reveil\n|- laSonnerie\l- heuresAlarme\l- minutesAlarme\l- alarme\l- enAlarme\l|+ Reveil()\l+ AvancerHeuresAlarme()\l+ AvancerMinutesAlarme()\l+ ReculerHeuresAlarme()\l+ ReculerMinutesAlarme()\l+ SurveillerAlarme()\l+ Controler()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node1 [label="{Horloge\n|# resolution\l# mode\l# heures\l# minutes\l# leCadran\l- nbModes\l- valAvant\l- leClavier\l|+ Horloge()\l+ ~Horloge()\l+ AvancerHeures()\l+ AvancerMinutes()\l+ ReculerHeures()\l+ ReculerMinutes()\l+ ActualiserHeure()\l+ Controler()\l+ Controler()\l+ ChangerMode()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_horloge.html"];
+}
